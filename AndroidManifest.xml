@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.aiiscyl.cursoandroidleccion3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.aiiscyl.cursoandroidleccion3.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.aiiscyl.cursoandroidleccion3.FrameLayoutActivity"
+            android:label="@string/title_activity_frame_layout" >
+             <intent-filter>
+                <action android:name="es.aiiscyl.action.SHOW.FRAMELAYOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>           
+        </activity>
+        <activity
+            android:name="es.aiiscyl.cursoandroidleccion3.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout" >
+             <intent-filter>
+                <action android:name="es.aiiscyl.action.SHOW.LINEARLAYOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>               
+        </activity>
+        <activity
+            android:name="es.aiiscyl.cursoandroidleccion3.GridLayoutActivity"
+            android:label="@string/title_activity_grid_layout" >
+             <intent-filter>
+                <action android:name="es.aiiscyl.action.SHOW.GRIDLAYOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>                
+        </activity>
+        <activity
+            android:name="es.aiiscyl.cursoandroidleccion3.RelativeLayoutActivity"
+            android:label="@string/title_activity_relative_layout" >
+             <intent-filter>
+                <action android:name="es.aiiscyl.action.SHOW.RELATIVELAYOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>                
+        </activity>
+    </application>
+
+</manifest>
